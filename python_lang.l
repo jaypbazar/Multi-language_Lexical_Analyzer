@@ -16,13 +16,11 @@ int yywrap(void) { return 1; }
 "as"|"assert"|"break"|"class"|"continue"|"def"|"del"|"elif"|"else"|"except"|"finally"|"for"|"from"|"global"|"if"|"import"|"lambda"|"nonlocal"|"pass"|"raise"|"return"|"try"|"while"|"with"|"yield"  { print_token("KEYWORD", "", yytext); }
 
 "and"|"or"|"not"|"in"|"is"      { print_token("OPERATOR", "logical", yytext); }
-
 [a-zA-Z_][a-zA-Z0-9_]*    { print_token("IDENTIFIER", "", yytext); }
 
 [0-9]+\.[0-9]+([eE][+-]?[0-9]+)?  { print_token("LITERAL", "float", yytext); }
 [0-9]+([eE][+-]?[0-9]+)?          { print_token("LITERAL", "integer", yytext); }
-\"([^\\"]|\.)*\"    { print_token("LITERAL", "string", yytext); }
-\'([^\\']|\.)*\'      { print_token("LITERAL", "string", yytext); }
+\"([^\\"]|\.)*\"|\'([^\\"]|\.)*\'    { print_token("LITERAL", "string", yytext); }
 
 "#"[^\n]*        { print_token("COMMENT", "", yytext); }
 

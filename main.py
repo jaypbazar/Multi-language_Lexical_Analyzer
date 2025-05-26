@@ -1,6 +1,12 @@
 import subprocess
 
 def run_flex_and_gcc(lang_file):
+    """
+    Runs the Flex lexical analyzer generator and GCC compiler for the given .l file.
+    - Runs Flex on the selected .l file to generate lex.yy.c.
+    - Compiles lex.yy.c using GCC to produce the lexer executable.
+    - Prints error messages if either step fails.
+    """
     # Run flex on the selected .l file
     flex_result = subprocess.run(['flex', lang_file], capture_output=True, text=True)
     if flex_result.returncode != 0:
@@ -15,11 +21,20 @@ def run_flex_and_gcc(lang_file):
     
     print('Compilation successful. Executable: lexer.exe')
 
+
 def main():
+    """
+    Main program loop for the multi-language lexical analyzer.
+    - Prompts the user to select a language definition file.
+    - Compiles the lexer for the selected language.
+    - Asks the user to choose input type (terminal or file).
+    - Executes the lexer with the provided input and displays the output.
+    - Repeats until the user chooses to exit.
+    """
     lang_files = {'1': 'c_lang.l', '2': 'java_lang.l', '3': 'python_lang.l'}
     while True:
         subprocess.run('cls', shell=True)
-        print("Choose a language: \n\t1. C\n\t2. Java\n\t3. Python\n\t4. Exit")
+        print("Choose a language: \n  1. C\n  2. Java\n  3. Python\n  4. Exit")
         
         choice = input("Enter your choice (1-4): ").strip()
         
@@ -42,12 +57,13 @@ def main():
             
             match input_choice:
                 case '1':
+                    # Get user input from terminal and run lexer
                     user_input = input('Enter the input for the lexer (end with Enter):\n')
-                    # Run lexer and pass input via stdin
                     lexer_proc = subprocess.run(['lexer.exe'], input=user_input, capture_output=True, text=True)
                     print('Lexer Output:\n', lexer_proc.stdout)
                     break
                 case '2':
+                    # Read input from a text file and run lexer
                     file_name = input('Enter the path to the input text file: ').strip()
                     try:
                         with open(file_name, 'r') as f:
