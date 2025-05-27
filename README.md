@@ -2,11 +2,16 @@
 ---
 ## Members:
 - Bazar, Jayp 
--
--
+- Nanale, Krizia Belle L.
+- Parañal, Mary Rachel L.
 ---
 ## Introduction
-&lt;Put a short description of the application here&gt;
+This Multi-language Lexical Analyzer is a software tool developed to perform lexical
+analysis on source code written in *C, Java, or Python*. Lexical analysis, the first phase of
+a compiler, involves breaking down source code into a sequence of tokens such as keywords,
+identifiers, literals, operators, and symbols.
+---
+## Features
 
 ---
 ## Requirements
@@ -39,3 +44,7 @@
 6. View the lexer output in the terminal.
 
 Note: If you encounter errors about missing programs, ensure all requirements are installed and accessible from the command line.
+
+---
+
+### Sample Outputs:
