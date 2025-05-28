@@ -1,7 +1,7 @@
 # <center>Multi-language Lexical Analyzer
 ---
 ## Members:
-- Bazar, Jayp 
+- Bazar, Jayp S.
 - Nanale, Krizia Belle L.
 - Parañal, Mary Rachel L.
 ---
@@ -10,6 +10,17 @@
 
 ---
 ## Features
+<p>The Multi-language Lexical Analyzer offers a range of functionalities that demonstrates the core principles of lexical analysis while supporting different programming languages.
+
+- **Multi-language support**: Allow analysis of source code written in C, Java, and Python.
+- **Dual input modes**: Users can input code directly through the terminal or load it from a text file.
+- **Token classification**: Identifies and categorizes tokens into:
+    - **Keywords** - Reserved words such as `int`, `def`, `public`
+    - **Identifiers** - Variable and function names like `main`, `sum`
+    - **Literals** - Numeric values like `123`, `3.14`
+    - **Operators** - Symbols such as `+`, `=`, `==`
+    - **Delimiters** - Syntax-related characters like `;`, `{`, `}`
+- **Error detection and reporting**: Clearly flags unrecognized or invalid tokens.
 
 ---
 ## Requirements
