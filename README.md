@@ -7,6 +7,7 @@
 ---
 ## Introduction
 <p>This Multi-language Lexical Analyzer is a software tool developed to perform lexical analysis on source code written in *C, Java, or Python*. Lexical analysis, the first phase of a compiler, involves breaking down source code into a sequence of tokens such as keywords, identifiers, literals, operators, and symbols.
+
 ---
 ## Features
 
