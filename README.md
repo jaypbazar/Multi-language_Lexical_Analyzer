@@ -6,10 +6,7 @@
 - Parañal, Mary Rachel L.
 ---
 ## Introduction
-This Multi-language Lexical Analyzer is a software tool developed to perform lexical
-analysis on source code written in *C, Java, or Python*. Lexical analysis, the first phase of
-a compiler, involves breaking down source code into a sequence of tokens such as keywords,
-identifiers, literals, operators, and symbols.
+<p>This Multi-language Lexical Analyzer is a software tool developed to perform lexical analysis on source code written in *C, Java, or Python*. Lexical analysis, the first phase of a compiler, involves breaking down source code into a sequence of tokens such as keywords, identifiers, literals, operators, and symbols.
 ---
 ## Features
 
@@ -24,7 +21,7 @@ identifiers, literals, operators, and symbols.
 ---
 ## How to run the program
 1. Clone the repository:
-   ```powershell
+   ```
    git clone https://github.com/jaypbazar/Multi-language_Lexical_Analyzer.git
    ```
    
@@ -48,3 +45,5 @@ Note: If you encounter errors about missing programs, ensure all requirements ar
 ---
 
 ### Sample Outputs:
+![Choosing a language](sample_outputs/1.png)
+![Choosing input type](sample_outputs/2.png)
