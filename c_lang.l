@@ -35,6 +35,7 @@ int yywrap(void) { return 1; }
 ("->")                        { print_token("OPERATOR", "pointer", yytext); }
 ("="|"+="|"-="|"*="|"/="|"%="|"&="|"|="|"^=") { print_token("OPERATOR", "assignment", yytext); }
 ("+"|"-"|"*"|"/"|"%"|"~")   { print_token("OPERATOR", "arithmetic", yytext); }
+"?"             { print_token("OPERATOR", "ternary", yytext); }
 
 "."|"::"|"->"|"..."   { print_token("PUNCTUATOR", "", yytext); }
 
