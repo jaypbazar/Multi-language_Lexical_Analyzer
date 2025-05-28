@@ -64,7 +64,7 @@ def main():
                     break
                 case '2':
                     # Read input from a text file and run lexer
-                    file_name = input('Enter the path to the input text file: ').strip()
+                    file_name = input('Enter the path to the input text file (with file extension): ').strip()
                     try:
                         with open(file_name, 'r') as f:
                             file_content = f.read()
