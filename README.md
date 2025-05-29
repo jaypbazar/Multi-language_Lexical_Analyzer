@@ -59,3 +59,4 @@ Note: If you encounter errors about missing programs, ensure all requirements ar
 ### Sample Outputs:
 ![Choosing a language](sample_outputs/1.png)
 ![Choosing input type](sample_outputs/2.png)
+![Choosing input type](sample_outputs/3.png)
